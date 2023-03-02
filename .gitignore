@@ -1,5 +1,8 @@
 # This file is used to ignore files which are generated
 # ----------------------------------------------------------------------------
+#Added by me to ignore qt build directory
+build-tree_shell-Desktop_Qt_6_1_0_GCC_64bit-Debug/*
+#End added by me
 
 *~
 *.autosave
