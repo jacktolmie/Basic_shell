@@ -1,0 +1,3 @@
+/home/jack/Downloads/Basic_shell/basic_shell/CMakeFiles/basic_shell.dir
+/home/jack/Downloads/Basic_shell/basic_shell/CMakeFiles/edit_cache.dir
+/home/jack/Downloads/Basic_shell/basic_shell/CMakeFiles/rebuild_cache.dir
