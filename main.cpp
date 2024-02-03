@@ -1,10 +1,10 @@
 #include <iostream>
-#include "basicshell.hpp"
+#include "basic_shell/include/basicshell.hpp"
 using namespace std;
 
 int main()
 {
-    Basicshell shell{"root"};
+    Basic_Shell shell{"root"};
     shell.initial_shell();
     return 0;
 }

@@ -1,4 +1,4 @@
-#include "../../cmd_map.hpp"
+#include "../include/cmd_map.hpp"
 
 /* Return a container of func_info struct
  * to access the members. */

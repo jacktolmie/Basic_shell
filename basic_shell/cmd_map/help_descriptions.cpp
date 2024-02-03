@@ -1,4 +1,4 @@
-#include "../../cmd_map.hpp"
+#include "../include/cmd_map.hpp"
 
 /* Function to send all short descriptions of the
  * commands available. */

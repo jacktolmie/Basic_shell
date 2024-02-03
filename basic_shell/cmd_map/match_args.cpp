@@ -1,4 +1,4 @@
-#include "../../cmd_map.hpp"
+#include "../include/cmd_map.hpp"
 
 /* Check if number of arguments sent match the
  * number of arguments required. */

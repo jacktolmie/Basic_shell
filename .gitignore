@@ -2,6 +2,9 @@
 # ----------------------------------------------------------------------------
 #Added by me to ignore qt build directory
 build-tree_shell-Desktop_Qt_6_1_0_GCC_64bit-Debug/*
+*.kdev4
+build
+.kdev4
 #End added by me
 
 *~
