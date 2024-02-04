@@ -47,98 +47,98 @@ private:
 	size_t 					vec_size{0};
 
 	// Function to add command to stored_commands container.
-	void add_command(const std::string&);
+	void 					add_command(const std::string&);
 
 	// Functions for when arrow keys are pressed.
-	size_t arrow_press(std::string&);
+	size_t 					arrow_press(std::string&);
     
     // Function when backspace is pressed.
-	size_t backspace(std::string&);
+	size_t 					backspace(std::string&);
     
     // Function for !# history option.
-	int bang(std::string&);
+	int 					bang(std::string&);
     
     // Function to check for closing quotes
-	void check_quote(std::string&);
+	void 					check_quote(std::string&);
     
     /* Function to check for words that need to
      * bypass the process_command check of proper
      * arguments/options passed. */
-    bool check_skip_list(const std::string&);
+    bool 					check_skip_list(const std::string&);
     
     // Just clears the screen. Is run at the beginning of Basic_Shell.
-	int clear_screen(Alias::arguments&);
+	int 					clear_screen(Alias::arguments&);
     
     // Function to remove char from front of cursor.
-	size_t delete_char(std::string&);
+	size_t 					delete_char(std::string&);
     
     // Returns the key that was pressed.
-	int getch(void);
+	int 					getch(void);
     
     // Displays the available commands that can be run.
-	int help(Alias::arguments&);
+	int 					help(Alias::arguments&);
     
     // Prints history of commands on the screen.
-	int history(Alias::arguments&);
+	int 					history(Alias::arguments&);
     
     // Function to insert characters typed
-	void insert_char(std::string&, int);
+	void 					insert_char(std::string&, int);
     
     // Function to list all registered commands.
-	int list_commands(Alias::arguments&);
+	int 					list_commands(Alias::arguments&);
     
     // Prints command on the current line in terminal.
-	void print_line(const std::string& = std::string());
+	void 					print_line(const std::string& = std::string());
     
     // Print out description in help command
-	void print_string(const std::string&);
+	void 					print_string(const std::string&);
     
     // Process the command when enter is pressed.
-	void process_command(std::string&);
+	void 					process_command(std::string&);
     
     // Process string for finding flags/options sent.
-	Alias::arguments process_options(std::string&);
+	Alias::arguments 		process_options(std::string&);
     
     // Function to load up default commands.
-	void registerdefaults();
+	void 					registerdefaults();
 
 	// Function when tab key is pressed.
-	size_t tab_press(std::string&);
+	size_t 					tab_press(std::string&);
 
 	/* Function to break string into tokens
 	 * that will be used in various functions.*/
-	Alias::arguments tokens(const std::string&);
+	Alias::arguments 		tokens(const std::string&);
 
 public:
 	/* A map that has the stored commands that are available during
 	 * the running of Basic_Shell. Use the 'register' function to
 	 * add new commands to the map. */
-	Cmd_map stored_commands;
+	Cmd_map 				stored_commands;
 
 	// Name of the shell. Defaults to Basic_Shell.
-	std::string shell_name;
+	std::string 			shell_name;
 
 	Basic_Shell(std::string sent_name = "Basic_Shell");
 	virtual ~Basic_Shell() = default;
     
     // Function to add word to skipped_words container.
-    void add_skipped_command(const std::string&);
+    void 					add_skipped_command(const std::string&);
 
 	// Just starts the shell to make it interactive.
-	void initial_shell();
+	void 					initial_shell();
 
 	/*This is for registering commands. All commands MUST already meet the
 	 *  function signature before being able to be used. The signature is:
 	 *  int <function name>(arguments&)*/
-	int register_command(const std::string&,
-						 Alias::_register,
-						 const std::string& short_desc = std::string(),
-						 const std::string& long_desc = std::string(),
-						 size_t number_of_args = 0,
-						 size_t num_of_options = 0);
+	int 					register_command(const std::string&,
+							Alias::_register,
+							const std::string& short_desc = std::string(),
+							const std::string& long_desc = std::string(),
+							size_t number_of_args = 0,
+							size_t num_of_options = 0);
 
 	// Empty container for passing to functions.
-	Alias::arguments empty_container;
+	Alias::arguments 		empty_container;
 };
 
 #endif  // BASIC_SHELL_H
