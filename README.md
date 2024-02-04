@@ -12,7 +12,7 @@ This will give the following features:
 * Recall a list of used commands using 'history' command to retrieve a
   list of commands with a number beside it to use with ! option.
   Running `history <command>` will recall only the history of the commands
-  requested ('history help history' will recall any commands using
+  requested (`history help history` will recall any commands using
   help and history).
   
 * Use !<#> to recall the desired command (eg. !2 recalls the second
@@ -31,7 +31,7 @@ This will give the following features:
 
 * Running `help <command>` will display a more indepth description
   of the command the user is looking for. It can also accept
-  multiple commands (help command1 command2 etc).
+  multiple commands (`help command1 command2` etc).
   
 * Some commands will need to bypass the checking of number of arguments
   and options. If needed, use the Basicshell::add_skipped_command to
