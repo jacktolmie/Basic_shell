@@ -7,22 +7,13 @@ class TestRegister : public Basic_Shell
 {
 public:
 	explicit TestRegister();
-	virtual ~TestRegister();
+	virtual ~TestRegister() = default;
 
 	/* Test function to show basic signature for a
 	 * command to be able to register correctly.
 	 */
-	int test_attempt(const std::deque<std::string>& options)
-	{
-		std::cout << "\nRunning testregister test_attempt.\n";
-		for (const auto& cmd : options) {
-			std::cout << cmd << '\n';
-		}
-		std::cout << std::endl;
-		return 0;
-	}
+	int test_attempt(const std::deque<std::string>&);
 
-protected:
 private:
 	/* If this is to initialize the shell, give name
 	 * variable the name you would like, otherwise this is not needed

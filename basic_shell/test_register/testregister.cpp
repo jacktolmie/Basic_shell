@@ -15,7 +15,12 @@ TestRegister::TestRegister()
 	TestRegister::initial_shell();
 }
 
-TestRegister::~TestRegister()
+int TestRegister::test_attempt(const std::deque<std::string>& options)
 {
-	// dtor
+	std::cout << "\nRunning testregister test_attempt.\n";
+	for (const auto& cmd : options) {
+		std::cout << cmd << '\n';
+	}
+	std::cout << std::endl;
+	return 0;
 }
