@@ -37,6 +37,36 @@ This will give the following features:
   and options. If needed, use the Basicshell::add_skipped_command to
   add the command (eg. Basicshell::add_skipped_command("test_name")).
 
+## To Install
+On Debian based systems run:
+```bash
+sudo apt update && sudo upgrade -y
+sudo apt install cmake build-essential
+```
+
+On Fedora based systems run:
+To install on Fedora systems, run:
+```bash
+sudo dnf update
+sudo dnf install cmake g++
+```
+Download the code:
+```bash
+git clone https://github.com/jacktolmie/Basic_shell.git
+```
+
+This template is packaged using CMake.
+To build it, you can run:
+```bash
+cd Basic_shell/basic_shell
+mkdir -p build
+cmake -B build
+cmake --build build
+```
+To run the shell:
+```bash
+build/basic_shell
+```
 
 ## Including Basicshell
 
