@@ -5,6 +5,8 @@ build-tree_shell-Desktop_Qt_6_1_0_GCC_64bit-Debug/*
 *.kdev4
 build
 .kdev4
+basic_shell/CMakeCache.txt
+CMakeLists.txt.user
 #End added by me
 
 *~

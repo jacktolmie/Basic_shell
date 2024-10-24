@@ -8,7 +8,7 @@ int Basic_Shell::register_command(const std::string& func_name,
 								size_t arguments,
 								size_t options)
 {
-	// If the function is already stored, commant and return.
+    // If the function is already stored, comment and return.
 	if (stored_commands.find_match(func_name)) {
         std::cout << "Command " << func_name << " already stored."
                 << std::endl;

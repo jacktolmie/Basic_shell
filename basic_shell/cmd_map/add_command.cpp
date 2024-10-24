@@ -9,7 +9,7 @@ void Cmd_map::add_command(const std::string& sent_name,
 						  size_t number_of_args,
 						  size_t number_of_options)
 {
-	commands.insert({func_info{sent_name,
+    commands.insert({func_info{sent_name,
 							   sent_command,
 							   short_desc,
 							   long_desc,
