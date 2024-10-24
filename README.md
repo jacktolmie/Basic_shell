@@ -58,9 +58,10 @@ git clone https://github.com/jacktolmie/Basic_shell.git
 This template is packaged using CMake.
 To build it, you can run:
 ```bash
+
 cd Basic_shell/basic_shell
 mkdir -p build
-cmake -B build
+cmake ../ -B build
 cmake --build build
 ```
 To run the shell:
